@@ -376,6 +376,7 @@ video::-webkit-media-controls {
         inset 0 1px 1px rgba(255, 255, 255, 0.3); 
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     cursor: pointer;
+    height: auto;
 }
 
 .card:hover{
@@ -392,6 +393,10 @@ video::-webkit-media-controls {
     background: linear-gradient(45deg, transparent 45%, var(--LightPink) 50%, transparent 55%),
                 linear-gradient(-45deg, transparent 45%, var(--LightYellow) 50%, transparent 55%);
     background-size: 12px 12px;
+}
+
+.card_description{
+    text-align: left;
 }
 
 .sparkle {
@@ -924,7 +929,7 @@ html {
 
     /*WORK CONTAINER*/
     #work_container{
-        padding: 10px;
+        padding: 50px;
         height: auto;
     }
 
@@ -932,19 +937,21 @@ html {
         display: flex;
         flex-wrap: wrap;
         height: auto;
-        width: 100%;
+        width: 90%;
         align-items: center;
         justify-content: space-evenly;
+        gap: 40px;
     }
 
     .card{
-        width: 200px;
-        height: 200px;
-        padding: 10px;
+        text-align: center;
+        width: 250px;
+        padding: 20px;
+        height: 300px;
     }
 
     .work_pic{
-        width: 200px;
+        width: 250px;
         height: 150px;
     }
 
@@ -1126,7 +1133,7 @@ html {
 
     /*WORK CONTAINER*/
     #work_container{
-        padding: 10px;
+        padding: 20px;
         height: auto;
     }
 
@@ -1134,22 +1141,23 @@ html {
         display: flex;
         flex-wrap: wrap;
         height: auto;
-        width: 100%;
+        width: 90%;
         align-items: center;
-        justify-content: center;
-        width: 80%;
+        justify-content: space-evenly;
         gap: 30px;
     }
 
     .card{
+        text-align: center;
         width: 250px;
-        height: 220px;
-        padding: 10px;
+        padding: 22px;
+        height: 300px;
+        padding-bottom: 30px;
     }
 
     .work_pic{
         width: 250px;
-        height: 170px;
+        height: 150px;
     }
 
     /*FOOTER SECTION*/
@@ -1262,7 +1270,7 @@ html {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     /*HOME CSS*/
     .logo_text_container{
         height: 64px;
@@ -1359,12 +1367,33 @@ html {
         box-shadow: 1px 3px 24px rgba(232, 141, 238, 0.626);
     }
 
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
+    #work_container{
+        padding: 10px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .cards_box{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .card{
+        text-align: center;
+        width: 200px;
+        padding: 15px;
+        height: 300px;
+        font-size: 15px;
+    }
+
+    .work_pic{
+        width: 200px;
+        height: 140px;
     }
 
     /*INFORMATION CSS*/
@@ -1423,6 +1452,10 @@ html {
         width: 70%;
     }
 
+    .work_category h1{
+        font-size: 24px;
+    }
+
     .my_work_box{
         padding: 10px;
         height: auto;
@@ -1434,7 +1467,6 @@ html {
 
     .my_work_box:nth-child(even){
         flex-direction: column;
-    
     }
 
     .my_work_box:nth-child(odd){
